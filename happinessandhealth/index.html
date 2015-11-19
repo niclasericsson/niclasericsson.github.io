@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Project 2 by Niclas Ericsson</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+body{
+	overflow-x: hidden;
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #BAF0F7;
+}
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #999;
+	margin-top: 30px;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 100px;
+	margin-top: 0;
+	color: #999;
+	position: relative;
+}
+a{
+	color: #999;
+}
+svg{
+	display: block;
+	margin: auto;
+}
+circle:hover{
+	fill: #E8CCBA;
+	cursor:pointer;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+circle{
+    -webkit-filter: drop-shadow( 1px 1px 1px #000 );
+	filter: drop-shadow( 1px 1px 1px #000 );
+}
+path{
+	fill: transparent;
+	stroke: #000;
+}
+text{
+	font-family: 'Open Sans', sans-serif;
+	fill: #999;
+	text-anchor: middle;
+}
+</style>
+<body>
+<script src="d3.v3.min.js"></script>
+<h1>The Feeling of Happiness and the State of Health 2010-2014</h1>
+<h4>By Niclas Ericsson | Data from <a href="http://www.worldvaluessurvey.org/">WVS</a></h4>
+
+<script>
+
+var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute('width', '1300');
+svg.setAttribute('height', '1200');
+svg.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
+document.body.appendChild(svg);
+
+d3.tsv("data/data.tsv", function(data) { 
+	var x = 90;
+	var y = 75;
+	var n = 0;
+    data.forEach(function(d) {
+
+		var shape = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+		shape.setAttribute("cx", x);
+		shape.setAttribute("cy", y);
+		shape.setAttribute("r",  (+data[n].veryGoodHealth+28));
+		shape.setAttribute("fill", "#f7ddcb");
+		shape.setAttribute("onmouseover", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+30) + "')");
+		shape.setAttribute("onclick", "alert('Statistics for " + data[n].country + " (" + data[n].totalVotes + " votes in total)\\n\\nVery happy: " + data[n].veryHappy + "%\\nRather happy: " + data[n].ratherHappy + "%\\nNot very happy: " + data[n].notVeryHappy + "%\\nNot at all happy: " + data[n].notAtAllHappy + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHappy + +data[n].dontKnowHappy) + "%\\n\\nVery good health: " + data[n].veryGoodHealth + "%\\nGood health: " + data[n].goodHealth + "%\\nFair health: " + data[n].fairHealth + "%\\nPoor health: " + data[n].poorHealth + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHealth + +data[n].dontKnowHealth) + "%')");
+		shape.setAttribute("onmouseout", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+28) + "')");
+		svg.appendChild(shape);
+
+		// Smile
+
+		var smileData = 0;
+		var smileConst = 5;
+		
+		if(+data[n].veryHappy > +data[n].ratherHappy && +data[n].veryHappy > +data[n].notVeryHappy && +data[n].veryHappy > +data[n].notAtAllHappy){
+			smileData = -15+(+data[n].veryHappy/smileConst)+(+data[n].ratherHappy/smileConst)-(+data[n].notVeryHappy/smileConst)-(+data[n].notAtAllHappy/smileConst);
+		}
+		if(+data[n].ratherHappy > +data[n].veryHappy && +data[n].ratherHappy > +data[n].notVeryHappy && +data[n].ratherHappy > +data[n].notAtAllHappy){
+			smileData = -25+(+data[n].veryHappy/smileConst)+(+data[n].ratherHappy/smileConst)-(+data[n].notVeryHappy/smileConst)-(+data[n].notAtAllHappy/smileConst);
+		}
+		if(+data[n].notVeryHappy > +data[n].veryHappy && +data[n].notVeryHappy > +data[n].ratherHappy && +data[n].notVeryHappy > +data[n].notAtAllHappy){
+			smileData = -28+(+data[n].veryHappy/smileConst)+(+data[n].ratherHappy/smileConst)-(+data[n].notVeryHappy/smileConst)-(+data[n].notAtAllHappy/smileConst);
+		}
+		if(+data[n].notAtAllHappy > +data[n].veryHappy && +data[n].notAtAllHappy > +data[n].ratherHappy && +data[n].notAtAllHappy > +data[n].notVeryHappy){
+			smileData = -30+(+data[n].veryHappy/smileConst)+(+data[n].ratherHappy/smileConst)-(+data[n].notVeryHappy/smileConst)-(+data[n].notAtAllHappy/smileConst);
+		}
+
+		var smile = document.createElementNS("http://www.w3.org/2000/svg", "path");
+		var coordinateString = "M" + (x-12) + "," + (y+15) + " C" + (x-5) + "," + (y+30+smileData) + " " + (x+5) + "," + (y+30+smileData) + " " + (x+12) + "," + (y+15) + "";
+		smile.setAttributeNS(null, "d", coordinateString);
+
+		svg.appendChild(smile);
+
+		// Eyes
+
+		var eye1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+		var coordinateString = "M" + (x-23) + "," + (y-15) + " C" + (x-18) + "," + (y-25) + " " + (x-8) + "," + (y-25) + " " + (x-3) + "," + (y-15) + "";
+		eye1.setAttributeNS(null, "d", coordinateString);
+
+		svg.appendChild(eye1);
+
+		var eye2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+		var coordinateString = "M" + (x+3) + "," + (y-15) + " C" + (x+8) + "," + (y-25) + " " + (x+18) + "," + (y-25) + " " + (x+23) + "," + (y-15) + "";
+		eye2.setAttributeNS(null, "d", coordinateString);
+
+		svg.appendChild(eye2);
+
+		// Texts
+
+		var newText = document.createElementNS("http://www.w3.org/2000/svg","text");
+
+		newText.setAttributeNS(null,"x",x);     
+		newText.setAttributeNS(null,"y",y+100); 
+		newText.setAttributeNS(null,"font-size","11");
+
+		var textNode = document.createTextNode(data[n].country);
+		newText.appendChild(textNode);
+		svg.appendChild(newText);
+
+		if(x >= 1100){
+			x = 90;
+			y = y + 200;
+		}
+		else{
+			x = x + 100;
+		}
+		n++; 
+   });
+});
+
+
+
+
+
+
+</script>
+
+<p>The size of the head depends on the state of health for the specific country. The smile on the other hand depends on the feeling of happiness.
+By looking at them both, one can see correlations between the two sets of data. Click on the heads to view statistics for that specific country.
+<br/>
+<br/>
+More details (including my analytic trail) can be found <a href="details.html">here</a>.</p>
+
+</html>

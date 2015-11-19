@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Bebas Neue Regular;
+    src: url("fonts/BebasNeue-Regular.otf");
+}
+
+@font-face {
+    font-family: Bebas Neue Bold;
+    src: url("fonts/BebasNeue-Bold.otf");
+}
+
+body{
+	background-image: url("img/background.jpg");
+	font-family: 'Open Sans', sans-serif;
+	margin: 25px;
+}
+
+.footer{
+	width: 100%;
+	height: 150px;
+	margin-top: 250px;
+	background-color: #444;
+}
+
+.footerText{
+	font-family: 'Bebas Neue Regular', 'Open Sans', sans-serif;
+	font-size: 60px;
+	width: 460px;
+    margin: 0 auto;
+	color: #fff;
+	line-height: 150px;
+}
+
+.infoBox{
+	width: 100%;
+	height: 110px;
+	margin-bottom: 40px;
+	border: 2px solid rgba(0,0,0,0);
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.scrollDown{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+}
+
+#scrollDownImage{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 50px;
+	cursor: pointer;
+}
+
+.projectInfo{
+	visibility: hidden;
+	opacity: 0;
+	margin: 20px;
+	transition: 0.3s;
+}
+
+.media{
+	margin-top: 90px;
+	position: absolute;
+}
+
+.description{
+	margin-top: 90px;
+	margin-left: 590px;
+	position: absolute;
+	width: 500px;
+	line-height: 30px;
+}
+
+.description > span > a {
+	color: #444;
+	transition: 0.3s;
+}
+
+.description > span > a:hover {
+	color: #000;
+}
+
+.imageBox{
+	width: 1020px;
+    margin: 0 auto;
+}
+
+.pictureOfMe{
+	height: 200px;
+	margin: 50px;
+	float: left;
+}
+
+.nameLogo{
+	height: 200px;
+	margin: 50px;
+}
+
+.logo{
+	/*height: 70px;*/
+	width: 215px;
+	margin: 20px;
+	float: left;
+}
+
+.labels{
+	float: left;
+	margin-top: 35px;
+	margin-left: 30px;
+}
+
+.label{
+	padding: 5px;
+	background-color: #444;
+	border-radius: 5px;
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+.projectTitle{
+	font-size: 50px;
+	font-family: 'Bebas Neue Bold', 'Open Sans', sans-serif;
+}
+
+#presentation{
+	height: 100%;
+	width: 100%;
+}
+
+.links{
+	font-family: 'Bebas Neue Regular', 'Open Sans', sans-serif;
+	font-size: 60px;
+	width: 490px;
+    margin: 0 auto;
+	margin-top: 60px;
+}
+
+.link{
+	text-decoration: none;
+	color: #888;
+	margin: 10px;
+	transition: 0.3s;
+}
+
+.link:hover{
+	color: #000;
+}
+
+/* Colors for each project */
+
+#brarwl{
+	background: rgba(112, 155, 193, 0.5);
+}
+
+#operationgame{
+	background: rgba(230, 164, 55, 0.5);
+}
+
+#untitledgame{
+	background: rgba(255, 107, 8, 0.5);
+}
+
+#tidebanan{
+	background: rgba(237, 112, 92, 0.5);
+}
+
+#hapticdrums{
+	background: rgba(150, 242, 219, 0.5);
+}
+
+#happiness-health{
+	background: rgba(106, 185, 195, 0.5);
+}
+
+#energyclock{
+	background: rgba(255, 212, 69, 0.5);
+}
+
+#memonile{
+	background: rgba(138, 190, 255, 0.5);
+}
+
+#kinectable{
+	background: rgba(164, 255, 81, 0.5);
+}
+
+#visit{
+	background: rgba(164, 96, 93, 0.5);
+}
+
+#battlefieldDB{
+	background: rgba(115, 97, 32, 0.5);
+}
+
+#tictactoe{
+	background: rgba(119, 119, 119, 0.5);
+}
