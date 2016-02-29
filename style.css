@@ -147,6 +147,14 @@ body{
 
 /* Colors for each project */
 
+#peppypals{
+	background: rgba(250, 200, 150, 0.5);
+}
+
+#argus{
+	background: rgba(170, 217, 245, 0.5);
+}
+
 #brarwl{
 	background: rgba(112, 155, 193, 0.5);
 }
