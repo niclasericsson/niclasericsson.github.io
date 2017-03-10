@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
 
 .logo {
 	position: absolute;
-    z-index: 2;
+    z-index: 5;
     top: 25px;
     left: 25px;
 }
@@ -23,15 +23,28 @@ h1, h2, h3, h4 {
 
 .container#middleContainer {
 	margin-top: 10px;
-	margin-bottom: 50px;
+	margin-bottom: 250px;
+}
+
+.container#middleContainerAboutPage {
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 .container#footer {
 	margin-bottom: 20px;
 }
 
-@media (max-width: 900px){
-	#body_login {
-		background-size: 1035px;
+.dropdown {
+	margin-top: 20px;
+}
+
+.dropdown button, .dropdown .dropdown-menu {
+	width: 300px;
+}
+
+@media (max-width: 415px){
+	.dropdown button, .dropdown .dropdown-menu {
+		width: 100%;
 	}
 }
