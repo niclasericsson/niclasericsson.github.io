@@ -2,7 +2,7 @@
 .carousel-fade .carousel-control { z-index: 2; }  
 .carousel-fade .item {
   opacity: 0;
-  max-height: 600px;
+  max-height: 500px;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
