@@ -100,7 +100,7 @@ body{
 	/*width: 215px;
 	margin: 20px;
 	float: left;*/
-	background-size: 225px !important;
+	background-size: 300px !important;
 	height: 100px;
 }
 
@@ -109,6 +109,7 @@ body{
 }
 
 .labels{
+	display: none;
 	padding-top: 15px;
 	/*float: left;
 	margin-top: 35px;
