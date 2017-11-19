@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
 	$(".infoBox").on("click", function(){
 		if($(this).height() < 450){
@@ -37,4 +37,4 @@ $(document).ready(function() {
 	if($(window).width() > 1366)
 		$(".imageBox").css({"margin-top" : "200px"})
 	
-});
+});*/

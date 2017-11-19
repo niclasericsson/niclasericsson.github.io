@@ -1,7 +1,5 @@
 body{
 	background-image: url("img/background.jpg");
-	font-family: 'Open Sans', sans-serif;
-	margin: 25px;
 }
 
 .footer{
@@ -12,7 +10,7 @@ body{
 }
 
 .footerText{
-	font-family: 'Fjalla One', 'Open Sans', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 50px;
 	width: 478px;
     margin: 0 auto;
@@ -22,11 +20,8 @@ body{
 }
 
 .infoBox{
-	width: 100%;
-	height: 110px;
 	margin-bottom: 40px;
 	border: 2px solid rgba(0,0,0,0);
-	border-radius: 10px;
 	transition: 0.3s;
 	cursor: pointer;
 }
@@ -46,23 +41,20 @@ body{
 }
 
 .projectInfo{
-	visibility: hidden;
-	opacity: 0;
-	margin: 20px;
 	transition: 0.3s;
 }
 
 .media{
-	margin-top: 90px;
-	position: absolute;
+	/*margin-top: 90px;
+	position: absolute;*/
 }
 
 .description{
-	margin-top: 90px;
+	/*margin-top: 90px;
 	margin-left: 590px;
 	position: absolute;
 	width: 500px;
-	line-height: 30px;
+	line-height: 30px;*/
 }
 
 .description > span > a {
@@ -75,31 +67,44 @@ body{
 }
 
 .imageBox{
-	width: 1020px;
-    margin: 0 auto;
+	/*width: 1020px;
+    margin: 0 auto;*/
 }
 
 .pictureOfMe{
-	height: 200px;
-	margin: 50px;
-	float: left;
+	background: url('img/me.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*height: 200px;*/
 }
 
 .nameLogo{
-	height: 200px;
-	margin: 50px;
+	/*background: url('img/name.png');
+	background-size: cover;*/
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+
+.nameLogo h1 {
+	font-size: 5em;
 }
 
 .logo{
-	width: 215px;
+	/*width: 215px;
 	margin: 20px;
-	float: left;
+	float: left;*/
+}
+
+.logoContainer {
+	
 }
 
 .labels{
-	float: left;
+	/*float: left;
 	margin-top: 35px;
-	margin-left: 30px;
+	margin-left: 30px;*/
 }
 
 .label{
@@ -116,21 +121,21 @@ body{
 
 .projectTitle{
 	font-size: 45px;
-	font-family: 'Fjalla One', 'Open Sans', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	text-transform: uppercase;
 }
 
 #presentation{
-	height: 100%;
-	width: 100%;
+	/*height: 100%;
+	width: 100%;*/
 }
 
 .links{
-	font-family: 'Fjalla One', 'Open Sans', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 45px;
-	width: 555px;
+	/*width: 555px;
     margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 60px;*/
 	text-transform: uppercase;
 }
 
@@ -149,6 +154,14 @@ body{
 
 #peppypals{
 	background: rgba(250, 200, 150, 0.5);
+}
+
+#peppypalslogo{
+	background: url('img/peppypals-logo.png') no-repeat center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #argus{

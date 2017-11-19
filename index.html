@@ -1,56 +1,67 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no shrink-to-fit=no">
 		<title>Portfolio - Niclas Ericsson</title>
 		<link rel="icon" type="image/png" href="img/icon.png"/>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	</head>
 	<body>
-		<div id="presentation">
-			<div class="imageBox">
-				<img class="pictureOfMe" src="img/me.png"></img>
-				<img class="nameLogo" src="img/name.png"></img>
+		<div class="container-fluid">
+			<div class="row">
+
+					<div class="pictureOfMe col-md-4"></div>
+					<div class="nameLogo col-md-8"><h1>Niclas Ericsson</h1></div>
 			</div>
-			<div class="links">
-				<a class="link" href="mailto:canilo.ericsson@gmail.com">E-mail</a>
-				<a class="link" href="https://se.linkedin.com/in/niclas-ericsson-23621010a">LinkedIn</a>
-				<a class="link" href="https://github.com/niclasericsson">GitHub</a>
-				<a class="link" href="resources/cv.pdf">CV</a>
+
+			<div class="row">
+
+				<div class="links">
+					<a class="link" href="mailto:canilo.ericsson@gmail.com">E-mail</a>
+					<a class="link" href="https://se.linkedin.com/in/niclas-ericsson-23621010a">LinkedIn</a>
+					<a class="link" href="https://github.com/niclasericsson">GitHub</a>
+					<a class="link" href="resources/cv.pdf">CV</a>
+				</div>
+
 			</div>
-			<div class="scrollDown">
-				<img id="scrollDownImage" src="img/scrollDown.png"></img>
+
+			<div class="row">
+				<h1 class="projectTitle">Currently working on</h1>
+			</div>
+		
+		
+		<div class="row">
+			<div class="infoBox col-md-12 col-sm-12 col-xs-12" id="peppypals">
+				<div class="logoContainer col-md-6">
+					<div class="logo" id="peppypalslogo"></div>
+				</div>
+				<div class="labels col-md-6">
+					<div class="label">Unity</div>
+					<div class="label">Android</div>
+					<div class="label">iOS</div>
+					<div class="label">Game</div>
+				</div>
+				<div class="projectInfo col-md-12">
+					<div class="media">
+						<img src="img/peppypals.jpg" width="560"></img>
+					</div>
+					<div class="description">
+						<span>I'm doing my Master Thesis on <a href="http://talawagames.com/">Talawa Games</a>,
+						where I'm working to create a new Peppy Pals experience for iOS and Android devices. More info coming soon!
+						<br/><br/>
+						In the meantime, check out Peppy Pals <a href="http://peppypals.com/">here</a>.
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<h1 class="projectTitle">Currently working on</h1>
-		
-		<div class="infoBox" id="peppypals">
-			<img class="logo" src="img/peppypals-logo.png"></img>
-			<div class="labels">
-				<div class="label">Unity</div>
-				<div class="label">Android</div>
-				<div class="label">iOS</div>
-				<div class="label">Game</div>
-			</div>
-			<div class="projectInfo">
-				<div class="media">
-					<img src="img/peppypals.jpg" width="560"></img>
-				</div>
-				<div class="description">
-					<span>I'm doing my Master Thesis on <a href="http://talawagames.com/">Talawa Games</a>,
-					where I'm working to create a new Peppy Pals experience for iOS and Android devices. More info coming soon!
-					<br/><br/>
-					In the meantime, check out Peppy Pals <a href="http://peppypals.com/">here</a>.
-					</span>
-				</div>
-			</div>
-		</div>
-		
-		<div class="infoBox" id="argus">
+		<!--<div class="infoBox" id="argus">
 			<img class="logo" src="img/argus-logo.png"></img>
 			<div class="labels">
 				<div class="label">C#</div>
@@ -352,8 +363,15 @@
 		</div>
 		<div class="footer">
 			<div class="footerText">
-				<span>© 2015 Niclas Ericsson</span>
+				<span>© 2017 Niclas Ericsson</span>
 			</div>
+		</div>-->
+
 		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 	</body>
 </html>
