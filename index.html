@@ -7,35 +7,29 @@
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/script.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-
-					<div class="pictureOfMe col-md-4"></div>
-					<div class="nameLogo col-md-8"><h1>Niclas Ericsson</h1></div>
+				<div class="nameLogo col-md-12"><h1>Niclas Ericsson</h1></div>
 			</div>
 
 			<div class="row">
-
 				<div class="links">
 					<a class="link" href="mailto:canilo.ericsson@gmail.com">E-mail</a>
 					<a class="link" href="https://se.linkedin.com/in/niclas-ericsson-23621010a">LinkedIn</a>
 					<a class="link" href="https://github.com/niclasericsson">GitHub</a>
 					<a class="link" href="resources/cv.pdf">CV</a>
 				</div>
-
 			</div>
 
-			<div class="row">
+			<div class="projectTitleContainer row">
 				<h1 class="projectTitle">Currently working on</h1>
 			</div>
 		
 		
-			<div class="infoBox row" id="peppypals">
+			<div class="infoBox row" id="peppypals" data-status="closed">
 				<div class="logoContainer col-md-6 col-sm-6">
 					<div class="logo" id="peppypalslogo"></div>
 				</div>
@@ -58,56 +52,60 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="infoBox row" id="argus">
+				<div class="logoContainer col-md-6 col-sm-6">
+					<div class="logo" id="arguslogo"></div>
+				</div>
+				<div class="labels col-md-6 col-sm-6">
+					<div class="label">C#</div>
+					<div class="label">OpenGL</div>
+					<div class="label">Unity</div>
+					<div class="label">Particle System</div>
+					<div class="label">Visualization</div>
+				</div>
+				<div class="projectInfo col-md-12">
+					<div class="mediaContainer">
+						<img src="img/argus.png" width="560"></img>
+					</div>
+					<div class="description">
+						<span>We're working on a new interactive visualization called <b>Argus</b> (project name) for the big 4K screen
+						in the <a href="https://www.kth.se/en/csc/forskning/hpcviz/forskning/2.48237/om-studion-1.346779">VIC Studio</a> at KTH, Stockholm.
+						<br/><br/>
+						More info coming soon!
+						</span>
+					</div>
+				</div>
+			</div>
 		
-		<div class="infoBox row" id="argus">
-			<div class="logoContainer col-md-6 col-sm-6">
-				<div class="logo" id="arguslogo"></div>
-			</div>
-			<div class="labels col-md-6 col-sm-6">
-				<div class="label">C#</div>
-				<div class="label">OpenGL</div>
-				<div class="label">Unity</div>
-				<div class="label">Particle System</div>
-				<div class="label">Visualization</div>
-			</div>
-			<div class="projectInfo col-md-12">
-				<div class="mediaContainer">
-					<img src="img/argus.png" width="560"></img>
+			<div class="infoBox row" id="untitledgame">
+				<div class="logoContainer col-md-6 col-sm-6">
+					<div class="logo" id="untitledgamelogo"></div>
 				</div>
-				<div class="description">
-					<span>We're working on a new interactive visualization called <b>Argus</b> (project name) for the big 4K screen
-					in the <a href="https://www.kth.se/en/csc/forskning/hpcviz/forskning/2.48237/om-studion-1.346779">VIC Studio</a> at KTH, Stockholm.
-					<br/><br/>
-					More info coming soon!
-					</span>
+				<div class="labels col-md-6 col-sm-6">
+					<div class="label">?</div>
+					<div class="label">C#</div>
+					<div class="label">Unity</div>
+					<div class="label">2D</div>
+					<div class="label">PC</div>
+					<div class="label">Game</div>
 				</div>
-			</div>
-		</div>
-		
-		<div class="infoBox" id="untitledgame">
-			<img class="logo" src="img/untitledgame-logo.png"></img>
-			<div class="labels">
-				<div class="label">?</div>
-				<div class="label">C#</div>
-				<div class="label">Unity</div>
-				<div class="label">2D</div>
-				<div class="label">PC</div>
-				<div class="label">Game</div>
-			</div>
-			<div class="projectInfo">
-				<div class="mediaContainer">
-					<img src="img/untitledgame.png" width="560"></img>
-				</div>
-				<div class="description">
-					<span>I'm working on another new untitled game. What can it be?
-					<br/><br/>
-					More info coming soon!
-					</span>
+				<div class="projectInfo col-md-12">
+					<div class="mediaContainer">
+						<img src="img/untitledgame.png" width="560"></img>
+					</div>
+					<div class="description">
+						<span>I'm working on another new untitled game. What can it be?
+						<br/><br/>
+						More info coming soon!
+						</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<h1 class="projectTitle">Past projects</h1>
+
+			<div class="row">
+				<h1 class="projectTitle">Past projects</h1>
+			</div>
 		
 		<div class="infoBox" id="brarwl">
 			<img class="logo" src="img/brarwl-logo.png"></img>
@@ -372,6 +370,8 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/script.js"></script>
 
 	</body>
 </html>

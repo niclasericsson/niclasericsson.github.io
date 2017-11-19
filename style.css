@@ -23,6 +23,7 @@ body{
 	border: 2px solid rgba(0,0,0,0);
 	transition: 0.3s;
 	cursor: pointer;
+	padding: 20px;
 }
 
 .scrollDown{
@@ -71,15 +72,6 @@ body{
     margin: 0 auto;*/
 }
 
-.pictureOfMe{
-	background: url('img/me.png') no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	/*height: 200px;*/
-}
-
 .nameLogo{
 	/*background: url('img/name.png');
 	background-size: cover;*/
@@ -95,7 +87,7 @@ body{
 	/*width: 215px;
 	margin: 20px;
 	float: left;*/
-	background-size: 200px !important;
+	background-size: 225px !important;
 	height: 100px;
 }
 
@@ -104,7 +96,7 @@ body{
 }
 
 .labels{
-	padding: 40px;
+	padding-top: 15px;
 	/*float: left;
 	margin-top: 35px;
 	margin-left: 30px;*/
@@ -115,16 +107,22 @@ body{
 	background-color: #444;
 	float: left;
 	color: #fff;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
 	margin: 5px;
 	text-transform: uppercase;
 }
 
-.projectTitle{
-	font-size: 45px;
+.projectTitleContainer {
+
+}
+
+.projectTitleContainer .projectTitle{
+	font-size: 35px;
 	font-family: 'Fjalla One', sans-serif;
 	text-transform: uppercase;
+	margin: 10px;
+	margin-top: 50px;
 }
 
 #presentation{
@@ -134,7 +132,8 @@ body{
 
 .links{
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 45px;
+	font-size: 35px;
+	margin: auto;
 	/*width: 555px;
     margin: 0 auto;
 	margin-top: 60px;*/
@@ -217,4 +216,8 @@ body{
 
 #arguslogo{
 	background: url('img/argus-logo.png') no-repeat center center;
+}
+
+#untitledgamelogo{
+	background: url('img/untitledgame-logo.png') no-repeat center center;
 }
