@@ -3,20 +3,22 @@ body{
 }
 
 .footer{
-	width: 100%;
-	height: 150px;
-	margin-top: 250px;
 	background-color: #444;
+	padding: 20px;
 }
 
 .footerText{
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 50px;
-	width: 478px;
-    margin: 0 auto;
+	font-size: 30px;
 	color: #fff;
-	line-height: 150px;
+	text-align: center;
 	text-transform: uppercase;
+	min-height: 100px !important;
+	line-height: 100px;
+}
+
+.footerText span {
+
 }
 
 .infoBox{
@@ -42,7 +44,6 @@ body{
 
 .projectInfo{
 	display: none;
-	transition: 0.3s;
 }
 
 .mediaContainer {
@@ -71,6 +72,26 @@ body{
 	}
 }
 
+@media (max-width: 400px) {
+	.nameLogo h1 {
+	    font-size: 4em !important;
+	}
+
+	.links, .projectTitleContainer .projectTitle, .footerText{
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.nameLogo h1 {
+	    font-size: 3em !important;
+	}
+
+	.links, .projectTitleContainer .projectTitle, .footerText{
+		font-size: 20px !important;
+	}
+}
+
 .description > span > a {
 	color: #444;
 	transition: 0.3s;
@@ -86,10 +107,9 @@ body{
 }
 
 .nameLogo{
-	/*background: url('img/name.png');
-	background-size: cover;*/
 	font-family: 'Permanent Marker', cursive;
 	text-align: center;
+	padding-top: 15px;
 }
 
 .nameLogo h1 {
@@ -97,9 +117,6 @@ body{
 }
 
 .logo{
-	/*width: 215px;
-	margin: 20px;
-	float: left;*/
 	background-size: 300px !important;
 	height: 100px;
 }
@@ -148,7 +165,7 @@ body{
 
 .links{
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 35px;
+	font-size: 30px;
 	margin: auto;
 	/*width: 555px;
     margin: 0 auto;
@@ -240,4 +257,12 @@ body{
 
 #brarwllogo{
 	background: url('img/brarwl-logo.png') no-repeat center center;
+}
+
+#bcaflogo{
+	background: url('img/bcaf-logo.png') no-repeat center center;
+}
+
+#tidebananlogo{
+	background: url('img/tidebanan-logo.png') no-repeat center center;
 }
