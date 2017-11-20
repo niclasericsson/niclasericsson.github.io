@@ -266,3 +266,35 @@ body{
 #tidebananlogo{
 	background: url('img/tidebanan-logo.png') no-repeat center center;
 }
+
+#drumtasticlogo {
+	background: url('img/drumtastic-logo.png') no-repeat center center;
+}
+
+#happinesshealthlogo {
+	background: url('img/happiness-health-logo.png') no-repeat center center;
+}
+
+#energyclocklogo {
+	background: url('img/energyclock-logo.png') no-repeat center center;
+}
+
+#memonilelogo {
+	background: url('img/memonile-logo.png') no-repeat center center;
+}
+
+#kinectablelogo {
+	background: url('img/kinectable-logo.png') no-repeat center center;
+}
+
+#visitlogo {
+	background: url('img/visit-logo.png') no-repeat center center;
+}
+
+#battlefieldDBlogo {
+	background: url('img/battlefieldDB-logo.png') no-repeat center center;
+}
+
+#tictactoelogo {
+	background: url('img/tictactoe-logo.png') no-repeat center center;
+}
