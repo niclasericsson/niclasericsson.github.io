@@ -185,11 +185,23 @@ body{
 
 /* Colors for each project */
 
+#kulturskolan{
+	background: rgba(90, 212, 128, 0.5);
+}
+
+#playalong{
+	background: rgba(57, 57, 57, 0.5);
+}
+
+#studyalong{
+	background: rgba(214, 91, 91, 0.5);
+}
+
 #peppypals{
 	background: rgba(250, 200, 150, 0.5);
 }
 
-#argus{
+#norrsken{
 	background: rgba(170, 217, 245, 0.5);
 }
 
@@ -243,12 +255,24 @@ body{
 
 /* Logos */
 
+#kulturskolanlogo {
+	background: url('img/kulturskolan-logo.png') no-repeat center center;
+}
+
+#playalonglogo {
+	background: url('img/playalong-logo.png') no-repeat center center;
+}
+
+#studyalonglogo {
+	background: url('img/studyalong-logo.png') no-repeat center center;
+}
+
 #peppypalslogo{
 	background: url('img/peppypals-logo.png') no-repeat center center;
 }
 
-#arguslogo{
-	background: url('img/argus-logo.png') no-repeat center center;
+#norrskenlogo{
+	background: url('img/norrsken-logo.png') no-repeat center center;
 }
 
 #untitledgamelogo{
