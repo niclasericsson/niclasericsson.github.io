@@ -55,16 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 20488,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 5097,
+				"buffer_size": 20486,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -307,7 +298,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -316,15 +307,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20488,
+						"buffer_size": 20486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1207,
-								1207
+								1013,
+								1013
 							]
 						],
 						"settings":
@@ -334,35 +325,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5097,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1036,
-								1036
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 664.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
