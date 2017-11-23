@@ -72,6 +72,12 @@ body{
 	}
 }
 
+@media (max-width: 575px) {
+	.mediaContainer{
+		margin-bottom: 10px;
+	}
+}
+
 @media (max-width: 400px) {
 	.nameLogo h1 {
 	    font-size: 4em !important;
