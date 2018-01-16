@@ -1,0 +1,285 @@
+/* Font face - Circular */
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-BookItalic.otf);
+    font-style: italic;
+}
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+/* End of font face */
+
+body {
+	font-family: circular, sans-serif !important;
+}
+
+p {
+	margin: 1em 0 !important;
+}
+
+a.supportLink {
+	color: #000 !important;
+	text-decoration: underline !important;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+a.supportLink:hover {
+	text-decoration: underline !important;
+}
+
+
+#header .logo {
+	background: url("../img/studyalong_logo_black.png") no-repeat;
+	background-size: 100%;
+	width: 100px;
+	height: 50px;
+}
+
+.mainImage {
+	background: url("../img/placeholder.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	padding: 20px;
+	line-height: 500px;
+  	text-align: center;
+  	opacity: 0;
+}
+
+.mainImage h2 {
+	color: #fff;
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+}
+
+section {
+
+}
+
+section.white {
+	background: #fff;
+}
+
+section.grey {
+	background: #f1f1f1;
+}
+
+section h2 {
+	text-align: center;
+	font-weight: bold;
+	margin: 45px 0;
+}
+
+#uspContainer {
+	margin-top: 30px;
+	margin-bottom: 160px;
+}
+
+#usp {
+	text-align: center;
+	margin: 15px 0;
+	font-size: 20px;
+}
+
+.screenShotImage {
+	background: url("../img/testbild.png") no-repeat;
+	background-size: 100%;
+	width: 900px;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: -132px;
+}
+
+@media (max-width: 991px) {
+	.screenShotImage {
+		width: 700px;
+		height: 350px;
+		margin-top: -103px;
+	}
+}
+
+@media (max-width: 767px) {
+	.screenShotImage {
+		width: 500px;
+		height: 250px;
+		margin-top: -73px;
+	}
+}
+
+@media (max-width: 550px) {
+	.screenShotImage {
+		width: 300px;
+		height: 150px;
+		margin-top: -44px;
+	}
+}
+
+.roundedButton {
+	max-width: 500px;
+    margin: 0 auto;
+	margin-bottom: 45px;
+	border: 1px solid #000;
+    border-radius: 20px;
+    min-width: 53px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+    text-align: center;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+@media only screen and (min-device-width: 1024px){
+	.roundedButton:hover {
+	    color: #fff;
+	    background-color: #000;
+	}
+}
+
+.image {
+	height: 300px;
+	opacity: 0;
+}
+
+.image#coursefinder {
+	background: url("../img/placeholder.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.row#imageTextContainer, .row#logoContainer, #mainFooter, .row#testimonialContainer, .row#header {
+	padding: 45px;
+}
+
+.row#knowMoreContainer {
+	padding: 0 45px;
+}
+
+.row#imageTextContainer .wrapper {
+	display: flex;
+	height: 300px;
+}
+
+.row#imageTextContainer .wrapper .inner {
+	align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+	.row#logoContainer .logoHolder {
+		-webkit-transition: opacity 0.2s ease-in-out;
+	    -moz-transition: opacity 0.2s ease-in-out;
+	    -o-transition: opacity 0.2s ease-in-out;
+	    transition: opacity 0.2s ease-in-out;
+	}
+
+	.row#logoContainer .logoHolder:hover {
+		opacity: 0.6;
+	}
+}
+
+@media (max-width: 767px) {
+	.row#imageTextContainer, .row#logoContainer, #mainFooter, .row#testimonialContainer, .row#header {
+		padding: 20px;
+	}
+}
+
+
+@media (max-width: 575px) {
+	
+	.row#imageTextContainer .wrapper {
+		display: block;
+		height: auto;
+		margin: 15px 0 50px 0;
+	}
+}
+
+#testimonial h2, #testimonial h4 {
+	font-weight: normal;
+	text-align: center;
+}
+
+#testimonial h4 {
+	margin-bottom: 40px;
+}
+
+.logoHolder {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.logoHolder#botkyrka {
+	background: url("../img/botkyrka.png") no-repeat;
+	background-position: center;
+	background-size: 100px;
+}
+
+.logoHolder#danderyd {
+	background: url("../img/danderyd.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#eskilstuna {
+	background: url("../img/eskilstuna.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#vasteras {
+	background: url("../img/vasteras.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+#mainFooter h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#mainFooter p {
+	font-size: 14px;
+}
+
+#mainFooter .iconHolder {
+    width: 40px;
+    height: 40px;
+    background-size: 40px !important;
+    display: inline-block;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#mainFooter .iconHolder:hover {
+    opacity: 0.6;
+}
+
+#mainFooter .iconHolder#facebookIcon {
+	background: url(../img/facebook.png);
+}
