@@ -10,11 +10,17 @@ $(document).ready(function () {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},500);
+                $(this).parent().parent().animate({'opacity':'1'},500);
             }
 
         }); 
 
+    });
+
+    $(".arrow").on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#uspContainer").offset().top
+        }, 500);
     });
 
 });

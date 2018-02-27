@@ -42,7 +42,6 @@ a.supportLink:hover {
 	text-decoration: underline !important;
 }
 
-
 #header .logo {
 	background: url("../img/studyalong_logo_black.png") no-repeat;
 	background-size: 100%;
@@ -50,12 +49,16 @@ a.supportLink:hover {
 	height: 50px;
 }
 
+#innerContainer {
+	padding: 0;
+}
+
 .mainImage {
 	background: url("../img/placeholder.jpg") no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 600px;
-	padding: 20px;
+	padding: 50px;
 	line-height: 500px;
   	text-align: center;
   	opacity: 0;
@@ -66,6 +69,25 @@ a.supportLink:hover {
 	display: inline-block;
   	vertical-align: middle;
   	line-height: normal;
+}
+
+.mainImage .arrow {
+	margin: 0 auto;
+	margin-top: -60px;
+    background-image: url(../img/arrow.png);
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+@media screen and (min-device-width: 800px){
+	.mainImage .arrow:hover {
+	    background-image: url(../img/arrow_inverted.png);
+	}
 }
 
 section {
@@ -83,18 +105,35 @@ section.grey {
 section h2 {
 	text-align: center;
 	font-weight: bold;
-	margin: 45px 0;
+	margin: 50px 0;
 }
 
 #uspContainer {
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-bottom: 160px;
+	max-width: 530px;
+    /*padding: 0;*/
+}
+
+@media (max-width: 575px) {
+	#uspContainer {
+		padding: 0 50px;
+	}
+}
+
+#uspContainer ul {
+
 }
 
 #usp {
-	text-align: center;
+	/*text-align: center;*/
 	margin: 15px 0;
 	font-size: 20px;
+	padding: 0;
+}
+
+#usp li {
+
 }
 
 .screenShotImage {
@@ -112,6 +151,9 @@ section h2 {
 		height: 350px;
 		margin-top: -103px;
 	}
+	#uspContainer {
+		margin-bottom: 130px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -119,6 +161,9 @@ section h2 {
 		width: 500px;
 		height: 250px;
 		margin-top: -73px;
+	}
+	#uspContainer {
+		margin-bottom: 100px;
 	}
 }
 
@@ -128,12 +173,15 @@ section h2 {
 		height: 150px;
 		margin-top: -44px;
 	}
+	#uspContainer {
+		margin-bottom: 70px;
+	}
 }
 
 .roundedButton {
-	max-width: 500px;
+	max-width: 280px;
     margin: 0 auto;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 	border: 1px solid #000;
     border-radius: 20px;
     min-width: 53px;
@@ -159,9 +207,17 @@ section h2 {
 	}
 }
 
+@media (min-width: 576px) {
+	.image {
+		margin-right: 25px;
+	}
+	.row#imageTextContainer .wrapper {
+		margin-left: 25px;
+	}
+}
+
 .image {
 	height: 300px;
-	opacity: 0;
 }
 
 .image#coursefinder {
@@ -170,12 +226,35 @@ section h2 {
 	background-position: center;
 }
 
-.row#imageTextContainer, .row#logoContainer, #mainFooter, .row#testimonialContainer, .row#header {
-	padding: 45px;
+.row#logoContainer, #mainFooter, .row#testimonialContainer {
+	padding: 50px;
 }
 
-.row#knowMoreContainer {
-	padding: 0 45px;
+.row#testimonialContainer {
+	max-width: 924px;
+    margin: 0 auto;
+}
+
+.row#header, .row#imageTextContainer {
+	padding: 25px 50px;
+}
+
+.row.firstContainer {
+	padding: 0 50px 25px 50px !important;
+}
+
+.row.lastContainer {
+	padding: 25px 50px 50px 50px !important;
+}
+
+.row#paddingContainer {
+	padding: 0 50px;
+}
+
+.row#imageTextContainer {
+	max-width: 924px;
+	margin: 0 auto;
+	opacity: 0;
 }
 
 .row#imageTextContainer .wrapper {
@@ -200,29 +279,29 @@ section h2 {
 	}
 }
 
-@media (max-width: 767px) {
-	.row#imageTextContainer, .row#logoContainer, #mainFooter, .row#testimonialContainer, .row#header {
+/*@media (max-width: 767px) {
+	.row#imageTextContainer, .row#logoContainer, #mainFooter, .row#testimonialContainer {
 		padding: 20px;
 	}
-}
+}*/
 
 
 @media (max-width: 575px) {
-	
 	.row#imageTextContainer .wrapper {
 		display: block;
 		height: auto;
-		margin: 15px 0 50px 0;
+		margin: 15px 0 0 0;
 	}
 }
 
-#testimonial h2, #testimonial h4 {
+.testimonial h2, .testimonial h4 {
 	font-weight: normal;
 	text-align: center;
+	margin-top: 0;
 }
 
-#testimonial h4 {
-	margin-bottom: 40px;
+.testimonial h4 {
+	margin-bottom: 0;
 }
 
 .logoHolder {
@@ -255,6 +334,27 @@ section h2 {
 	background-size: 150px;
 }
 
+@media (min-width: 576px) {
+	.footerBoxLeft div {
+		margin-right: 25px;
+	}
+	.footerBoxRight div {
+		margin-left: 25px;
+	}
+}
+
+@media (max-width: 575px) {
+	.footerBoxLeft div {
+		margin-bottom: 25px;
+	}
+	.footerBoxRight div {
+		margin-bottom: 25px;
+	}
+	.lastFooterBox div {
+		margin-bottom: 0 !important;
+	}
+}
+
 #mainFooter h3 {
     font-size: 20px;
     font-weight: bold;
@@ -263,6 +363,7 @@ section h2 {
 
 #mainFooter p {
 	font-size: 14px;
+	max-width: 400px;
 }
 
 #mainFooter .iconHolder {
