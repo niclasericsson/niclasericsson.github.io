@@ -108,6 +108,19 @@ section h2 {
 	margin: 50px 0;
 }
 
+section h2.onlyBottom {
+	margin-top: 0;
+}
+
+section h4 a {
+	color: #000;
+	text-decoration: underline;
+}
+
+section h4 a:hover {
+	color: #000;
+}
+
 #uspContainer {
 	margin-top: 50px;
 	margin-bottom: 160px;
@@ -137,22 +150,48 @@ section h2 {
 }
 
 .screenShotImage {
-	background: url("../img/testbild.png") no-repeat;
+	background: url("../img/presentation.png") no-repeat;
 	background-size: 100%;
 	width: 900px;
 	height: 450px;
 	margin: 0 auto;
-	margin-top: -132px;
+	margin-top: -141px;
+}
+
+.row.knowMore {
+	max-width: 924px;
+	margin: 0 auto;
+	display: flex;
+	padding-bottom: 50px !important;
+}
+
+.row.knowMore .borderLeft {
+	border-left: 1px solid;
+}
+
+.row.knowMore .left {
+	padding-right: 25px !important;
+}
+
+.row.knowMore .right {
+	padding-left: 25px !important;
 }
 
 @media (max-width: 991px) {
 	.screenShotImage {
 		width: 700px;
 		height: 350px;
-		margin-top: -103px;
+		margin-top: -110px;
 	}
 	#uspContainer {
 		margin-bottom: 130px;
+	}
+}
+
+@media (max-width: 924px) {
+	.row#imageTextContainer, .row.knowMore {
+		margin-right: -15px !important;
+    	margin-left: -15px !important;
 	}
 }
 
@@ -160,10 +199,30 @@ section h2 {
 	.screenShotImage {
 		width: 500px;
 		height: 250px;
-		margin-top: -73px;
+		margin-top: -78px;
 	}
 	#uspContainer {
 		margin-bottom: 100px;
+	}
+	.roundedButton {
+		float: none !important;
+		width: unset !important;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	#innerTextContainer {
+		max-width: 280px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.row.knowMore .borderLeft {
+		border-left: none;
+	}
+	.row.knowMore .left {
+		padding-right: 0 !important;
+	}
+	.row.knowMore .right {
+		padding-left: 0 !important;
 	}
 }
 
@@ -171,7 +230,7 @@ section h2 {
 	.screenShotImage {
 		width: 300px;
 		height: 150px;
-		margin-top: -44px;
+		margin-top: -47px;
 	}
 	#uspContainer {
 		margin-bottom: 70px;
@@ -179,9 +238,10 @@ section h2 {
 }
 
 .roundedButton {
-	max-width: 280px;
-    margin: 0 auto;
-	margin-bottom: 50px;
+	/*max-width: 280px;*/
+	width: 280px;
+    /*margin: 0 auto;*/
+    float: right;
 	border: 1px solid #000;
     border-radius: 20px;
     min-width: 53px;
@@ -221,8 +281,26 @@ section h2 {
 }
 
 .image#coursefinder {
-	background: url("../img/placeholder.jpg") no-repeat;
-	background-size: cover;
+	background: url("../img/kurskatalog.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.image#admin {
+	background: url("../img/mittschema.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.image#community {
+	background: url("../img/irum.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.image#videolesson {
+	background: url("../img/videolektion.png") no-repeat;
+	background-size: contain;
 	background-position: center;
 }
 
@@ -262,7 +340,7 @@ section h2 {
 	height: 300px;
 }
 
-.row#imageTextContainer .wrapper .inner {
+.row#imageTextContainer .wrapper .inner, .knowMore .inner {
 	align-self: center;
 }
 
