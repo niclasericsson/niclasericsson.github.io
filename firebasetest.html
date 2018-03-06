@@ -1,0 +1,126 @@
+<html>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+
+
+<ul id="users"></ul>
+<textarea id="message"></textarea>
+<textarea id="token"></textarea>
+<button id="auth">Authenticate</button>
+<ul id="messages"></ul>
+  <script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+
+  
+  var config = {
+    apiKey: "AIzaSyD59XA3fT_FiZ-118MiUAUM3c1Ti05TuaM",
+    authDomain: "studyalong-test.firebaseapp.com",
+    databaseURL: "https://studyalong-test.firebaseio.com",
+    projectId: "studyalong-test",
+    storageBucket: "studyalong-test.appspot.com",
+    messagingSenderId: "410262631540"
+  };
+  firebase.initializeApp(config);
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {   
+  	var groupId = 1;
+
+    var isAnonymous = user.isAnonymous;
+    if(isAnonymous)
+    	return;
+    var uid = user.uid;
+    console.log(uid);
+
+    var onlineFlag = firebase.database().ref('groups/'+groupId+'/online/' + uid)
+    onlineFlag.set({
+    	online : 1
+  	});
+	onlineFlag.onDisconnect().remove();    
+	var writingFlag = firebase.database().ref('groups/'+groupId+'/writing/'+ uid);
+	writingFlag.onDisconnect().remove();
+
+	messages = firebase.database().ref('groups/'+groupId+'/messages');
+
+	firebase.database().ref('groups/'+groupId+'/writing').on('value', (snapshot)=>{
+		let users = snapshot.val();
+		for(var user in users){
+			$('li#'+user).html(user + ' (*)');
+		}
+	});
+	messages.on('child_added', (data)=>{		
+		var message = data.val();
+		var li = $('<li id="'+data.key+'">'+message.userId+': '+message.message+'</li>');
+		$('#messages').append(li);
+	});
+	messages.on('child_removed', (data)=>{				
+		$('#'+data.key).remove();
+	});
+	firebase.database().ref('groups/'+groupId+'/writing').on('child_removed', (data)=>{
+		$('li#'+data.key).html(data.key);
+	});
+	firebase.database().ref('groups').on('value', (snapshot)=>{
+		console.log('GROUPS: ', snapshot.val());
+	});
+	firebase.database().ref('groups/'+groupId+'/online').on('value', (snapshot)=>{
+		let users = snapshot.val();
+		var li = []; 
+		for(var user in users){
+			if($('#'+user).length == 0){
+				li.push($('<li id="'+user+'">'+user+'</li>'));
+			}
+			
+		}
+		$('#users li').remove();
+		$('#users').append(li);
+
+	});
+	var timer = 0;
+	$('#message').keydown((event)=>{
+		if(timer!=null){
+			clearTimeout(timer);
+		}
+		if ( event.which == 13 ) {
+   			event.preventDefault();
+			writingFlag.remove();	
+			var message = $('#message').val();
+			var newMessage = messages.push();
+			newMessage.set({
+				userId:uid,
+				message:message
+			});
+			$('#message').val("");
+   			return;
+  		}
+
+		writingFlag.set({writing:1});
+		timer = setTimeout(()=>{writingFlag.remove();}, 400);
+	});
+
+  }
+  // ...
+});
+
+
+
+$("#auth").on('click', function(){
+	
+	var token = $("#token").val();	
+
+	firebase.auth().signInWithCustomToken(token).catch(function(error) {
+  		// Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+  		console.log(errorMessage);
+	  // ...
+	});
+
+});
+
+</script>
+</html>
