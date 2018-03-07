@@ -18,9 +18,9 @@ $(document).ready(function () {
 
 
         if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            var bottom_of_object = $('#logoContainer').offset().top + $('#logoContainer').outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
+            var startLine = $('#logoContainer').offset().top + 500;
+            var windowBottom = $(window).scrollTop() + $(window).height();
+            if( windowBottom > startLine ){
                 var delay = 0;
                 $('#logoContainer').children().each( function(i){
                     delay = delay + 50;
