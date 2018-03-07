@@ -156,6 +156,7 @@ section h4 a:hover {
 	height: 450px;
 	margin: 0 auto;
 	margin-top: -141px;
+	opacity: 0;
 }
 
 .row.knowMore {
@@ -286,6 +287,12 @@ section h4 a:hover {
 	background-position: center;
 }
 
+.image#programmefinder {
+	background: url("../img/kulturbokning.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 .image#admin {
 	background: url("../img/mittschema.png") no-repeat;
 	background-size: contain;
@@ -382,6 +389,10 @@ section h4 a:hover {
 	margin-bottom: 0;
 }
 
+#logoContainer .logo {
+	opacity: 0;
+}
+
 .logoHolder {
 	height: 200px;
 	width: 200px;
@@ -408,6 +419,72 @@ section h4 a:hover {
 
 .logoHolder#vasteras {
 	background: url("../img/vasteras.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#sollentuna {
+	background: url("../img/sollentuna.png") no-repeat;
+	background-position: center;
+	background-size: 100px;
+}
+
+.logoHolder#haninge {
+	background: url("../img/haninge.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#solna {
+	background: url("../img/solna.png") no-repeat;
+	background-position: center;
+	background-size: 100px;
+}
+
+.logoHolder#strangnas {
+	background: url("../img/strangnas.png") no-repeat;
+	background-position: center;
+	background-size: 200px;
+}
+
+.logoHolder#varmdo {
+	background: url("../img/varmdo.png") no-repeat;
+	background-position: center;
+	background-size: 200px;
+}
+
+.logoHolder#tyreso {
+	background: url("../img/tyreso.png") no-repeat;
+	background-position: center;
+	background-size: 200px;
+}
+
+.logoHolder#sodertalje {
+	background: url("../img/sodertalje.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#taby {
+	background: url("../img/taby.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#stromsund {
+	background: url("../img/stromsund.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#kulturskolan {
+	background: url("../img/kulturskolan.png") no-repeat;
+	background-position: center;
+	background-size: 150px;
+}
+
+.logoHolder#vkb {
+	background: url("../img/vasterasstad.png") no-repeat;
 	background-position: center;
 	background-size: 150px;
 }
