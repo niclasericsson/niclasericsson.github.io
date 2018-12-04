@@ -62,13 +62,14 @@ body{
 	position: absolute;
 	width: 500px;
 	line-height: 30px;*/
+	font-size: 20px;
 }
 
 @media (min-width: 576px) {
 	.description{
 		float: left;
     	width: 50%;
-    	padding-left: 15px;
+    	padding-left: 30px;
 	}
 	.description > span > a {
 		max-width: 280px;
@@ -87,7 +88,7 @@ body{
 	}
 
 	.links, .projectTitleContainer .projectTitle, .footerText{
-		font-size: 25px !important;
+		font-size: 30px !important;
 	}
 }
 
@@ -97,14 +98,13 @@ body{
 	}
 
 	.links, .projectTitleContainer .projectTitle, .footerText{
-		font-size: 20px !important;
+		font-size: 25px !important;
 	}
 }
 
 .description > span > a {
 	display: block;
 	border: 1px solid #212529;
-    border-radius: 20px;
     min-width: 53px;
     text-transform: uppercase;
     text-align: center;
@@ -165,7 +165,7 @@ body{
 	background-color: #212529;
 	float: left;
 	color: #fff;
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: bold;
 	margin: 15px;
     margin-left: 0;
@@ -178,7 +178,6 @@ body{
 }
 
 .projectTitleContainer .projectTitle{
-	font-size: 35px;
 	font-family: 'Fjalla One', sans-serif;
 	text-transform: uppercase;
 	margin: 10px;
@@ -222,6 +221,10 @@ body{
 
 #studyalong{
 	background: rgba(214, 91, 91, 0.5);
+}
+
+#studyalongapp{
+	background: rgba(0, 153, 153, 0.5);
 }
 
 #peppypals{
@@ -292,6 +295,10 @@ body{
 
 #studyalonglogo {
 	background: url('img/studyalong-logo.png') no-repeat center center;
+}
+
+#studyalongapplogo {
+	background: url('img/studyalongapp-logo.png') no-repeat center center;
 }
 
 #peppypalslogo{
