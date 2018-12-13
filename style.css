@@ -116,6 +116,11 @@ body{
     text-align: center;
 }
 
+.description > span > a.disabled {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
 @media only screen and (min-device-width: 1024px) {
 	.description > span > a:hover {
 		color: #fff;
@@ -206,6 +211,10 @@ body{
 
 /* Colors for each project */
 
+#ljud{
+	background: rgba(81, 182, 182, 0.5);
+}
+
 #kulturskolan{
 	background: rgba(90, 212, 128, 0.5);
 }
@@ -219,7 +228,7 @@ body{
 }
 
 #studyalongapp{
-	background: rgba(0, 153, 153, 0.5);
+	background: rgba(214, 91, 91, 0.5);
 }
 
 #peppypals{
@@ -279,6 +288,10 @@ body{
 }
 
 /* Logos */
+
+#ljudlogo {
+	background: url('img/ljud-logo.png') no-repeat center center;
+}
 
 #kulturskolanlogo {
 	background: url('img/kulturskolan-logo.png') no-repeat center center;
