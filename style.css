@@ -1,7 +1,3 @@
-body{
-	background-image: url("img/background.jpg");
-}
-
 .footer{
 	background-color: #444;
 	padding: 20px;
@@ -209,6 +205,16 @@ body{
 	color: #000;
 }
 
+.link.selected{
+	pointer-events: none;
+	color: #000;
+	text-decoration: underline;
+}
+
+.link.contact {
+	margin: 0;
+}
+
 /* Colors for each project */
 
 #ljud{
@@ -363,4 +369,30 @@ body{
 
 #tictactoelogo {
 	background: url('img/tictactoe-logo.png') no-repeat center center;
+}
+
+/* Resume */
+
+.infoBox p a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.infoBox .picOfMe {
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.infoBox.resumeBox{
+	cursor: default;
+}
+
+.infoBox.resumeBox h1, .infoBox.resumeBox h2, .infoBox.resumeBox h3, .infoBox.resumeBox h4 {
+	font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.infoBox .subtitle {
+	color: #888;
 }

@@ -55,16 +55,8 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 22003,
+				"buffer_size": 22590,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 677,
 				"line_ending": "Unix"
 			}
 		},
@@ -72,7 +64,16 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 5621,
+				"buffer_size": 6283,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resume/index.html",
+			"settings":
+			{
+				"buffer_size": 7169,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -135,14 +136,15 @@
 	"expanded_folders":
 	[
 		"/Users/dev/Projects/niclasericsson.github.io",
-		"/Users/dev/Projects/niclasericsson.github.io/js"
+		"/Users/dev/Projects/niclasericsson.github.io/resume"
 	],
 	"file_history":
 	[
-		"/Users/dev/Projects/niclasericsson.github.io/style.css",
+		"/Users/dev/Downloads/Instrumentimport Ekerö - Import.csv",
 		"/Users/dev/Projects/niclasericsson.github.io/index.html",
-		"/Users/dev/Downloads/Bokningsbekräftelse.html",
+		"/Users/dev/Projects/niclasericsson.github.io/style.css",
 		"/Users/dev/Projects/niclasericsson.github.io/js/script.js",
+		"/Users/dev/Downloads/Bokningsbekräftelse.html",
 		"/Users/dev/Projects/niclasericsson.github.io/portfolio.sublime-project",
 		"/Users/dev/Projects/mockserver/app.js",
 		"/Users/dev/Projects/studyalongapp/App.js",
@@ -265,8 +267,7 @@
 		"/Volumes/playalong/website/webroot/templates/playalong/html/com_content/article/default.php",
 		"/Users/dev/dumps/Dump20160901/joomla3_Area.sql",
 		"/Users/dev/dumps/Dump20160831/579499_play3_Area.sql",
-		"/Users/dev/dumps/Dump20160901.sql",
-		"/Users/dev/Downloads/ExpandingSearchBar/index.html"
+		"/Users/dev/dumps/Dump20160901.sql"
 	],
 	"find":
 	{
@@ -284,6 +285,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"link",
+			"\"\"",
+			"\"\"\"",
 			".description > span > a",
 			".description",
 			"projectTitleContainer",
@@ -308,6 +312,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"NULL",
+			"\"",
 			"mediaContainer"
 		],
 		"reverse": false,
@@ -328,49 +334,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22003,
+						"buffer_size": 22590,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1598,
-								1598
+								1009,
+								1009
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Simple JSX/JSX.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -381,20 +358,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5621,
+						"buffer_size": 6283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1797,
-								1797
+								6035,
+								6035
 							]
 						],
 						"settings":
@@ -403,7 +380,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1415.0,
+						"translation.y": 5697.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resume/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3524,
+								3524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 739.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
