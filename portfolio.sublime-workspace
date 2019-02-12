@@ -51,33 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 23451,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 6407,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resume/index.html",
-			"settings":
-			{
-				"buffer_size": 8552,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -140,10 +113,11 @@
 	],
 	"file_history":
 	[
+		"/Users/dev/Projects/niclasericsson.github.io/resume/index.html",
+		"/Users/dev/Projects/niclasericsson.github.io/style.css",
+		"/Users/dev/Projects/niclasericsson.github.io/index.html",
 		"/Users/dev/Projects/niclasericsson.github.io/.gitignore",
 		"/Users/dev/Downloads/Instrumentimport Ekerö - Import.csv",
-		"/Users/dev/Projects/niclasericsson.github.io/index.html",
-		"/Users/dev/Projects/niclasericsson.github.io/style.css",
 		"/Users/dev/Projects/niclasericsson.github.io/js/script.js",
 		"/Users/dev/Downloads/Bokningsbekräftelse.html",
 		"/Users/dev/Projects/niclasericsson.github.io/portfolio.sublime-project",
@@ -266,8 +240,7 @@
 		"/Users/dev/Downloads/bootstrap/css/bootstrap.min.css",
 		"/Users/dev/Downloads/bootstrap/css/bootstrap-theme.css",
 		"/Volumes/playalong/website/webroot/templates/playalong/html/com_content/article/default.php",
-		"/Users/dev/dumps/Dump20160901/joomla3_Area.sql",
-		"/Users/dev/dumps/Dump20160831/579499_play3_Area.sql"
+		"/Users/dev/dumps/Dump20160901/joomla3_Area.sql"
 	],
 	"find":
 	{
@@ -325,96 +298,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23451,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1933,
-								1933
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 524.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3217,
-								3217
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5075.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resume/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8552,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6032,
-								6032
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2069.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
