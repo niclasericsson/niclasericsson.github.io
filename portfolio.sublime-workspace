@@ -51,6 +51,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 23420,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -108,8 +117,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dev/Projects/niclasericsson.github.io",
-		"/Users/dev/Projects/niclasericsson.github.io/resume"
+		"/Users/dev/Projects/niclasericsson.github.io"
 	],
 	"file_history":
 	[
@@ -298,8 +306,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15231,
+								15231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5494.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
