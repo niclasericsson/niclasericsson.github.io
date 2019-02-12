@@ -217,6 +217,10 @@
 
 /* Colors for each project */
 
+#jox{
+	background: rgba(249, 203, 156, 0.5);
+}
+
 #ljud{
 	background: rgba(81, 182, 182, 0.5);
 }
@@ -294,6 +298,10 @@
 }
 
 /* Logos */
+
+#joxlogo {
+	background: url('img/jox-logo.png') no-repeat center center;
+}
 
 #ljudlogo {
 	background: url('img/ljud-logo.png') no-repeat center center;

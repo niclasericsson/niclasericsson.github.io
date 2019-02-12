@@ -73,7 +73,7 @@
 			"file": "resume/index.html",
 			"settings":
 			{
-				"buffer_size": 7169,
+				"buffer_size": 7511,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -140,6 +140,7 @@
 	],
 	"file_history":
 	[
+		"/Users/dev/Projects/niclasericsson.github.io/.gitignore",
 		"/Users/dev/Downloads/Instrumentimport Ekerö - Import.csv",
 		"/Users/dev/Projects/niclasericsson.github.io/index.html",
 		"/Users/dev/Projects/niclasericsson.github.io/style.css",
@@ -266,8 +267,7 @@
 		"/Users/dev/Downloads/bootstrap/css/bootstrap-theme.css",
 		"/Volumes/playalong/website/webroot/templates/playalong/html/com_content/article/default.php",
 		"/Users/dev/dumps/Dump20160901/joomla3_Area.sql",
-		"/Users/dev/dumps/Dump20160831/579499_play3_Area.sql",
-		"/Users/dev/dumps/Dump20160901.sql"
+		"/Users/dev/dumps/Dump20160831/579499_play3_Area.sql"
 	],
 	"find":
 	{
@@ -392,15 +392,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7169,
+						"buffer_size": 7511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3524,
-								3524
+								4620,
+								4620
 							]
 						],
 						"settings":
@@ -409,7 +409,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 739.0,
+						"translation.y": 1313.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
