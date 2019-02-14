@@ -55,7 +55,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 23420,
+				"buffer_size": 23755,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resume/index.html",
+			"settings":
+			{
+				"buffer_size": 9177,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -117,11 +126,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dev/Projects/niclasericsson.github.io"
+		"/Users/dev/Projects/niclasericsson.github.io",
+		"/Users/dev/Projects/niclasericsson.github.io/resume"
 	],
 	"file_history":
 	[
 		"/Users/dev/Projects/niclasericsson.github.io/resume/index.html",
+		"/Users/dev/Projects/niclasericsson.github.io/peppypals/index.html",
+		"/Users/dev/Projects/niclasericsson.github.io/studyalongapp/index.html",
 		"/Users/dev/Projects/niclasericsson.github.io/style.css",
 		"/Users/dev/Projects/niclasericsson.github.io/index.html",
 		"/Users/dev/Projects/niclasericsson.github.io/.gitignore",
@@ -246,9 +258,7 @@
 		"/Volumes/playalong/website/webroot/templates/playalong/colorScheme.php",
 		"/Users/dev/Desktop/newStyle.sql",
 		"/Users/dev/Downloads/bootstrap/css/bootstrap.min.css",
-		"/Users/dev/Downloads/bootstrap/css/bootstrap-theme.css",
-		"/Volumes/playalong/website/webroot/templates/playalong/html/com_content/article/default.php",
-		"/Users/dev/dumps/Dump20160901/joomla3_Area.sql"
+		"/Users/dev/Downloads/bootstrap/css/bootstrap-theme.css"
 	],
 	"find":
 	{
@@ -306,7 +316,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -315,15 +325,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23420,
+						"buffer_size": 23755,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15231,
-								15231
+								1509,
+								1509
 							]
 						],
 						"settings":
@@ -332,7 +342,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5494.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resume/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2562,
+								2562
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 665.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
