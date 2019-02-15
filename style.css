@@ -39,7 +39,7 @@
 }
 
 .projectInfo{
-	/*display: none;*/
+	display: none;
 }
 
 .mediaContainer {
@@ -149,7 +149,7 @@
 }
 
 .labels{
-	/*display: none;*/
+	display: none;
 	padding-top: 30px;
 	/*float: left;
 	margin-top: 35px;
