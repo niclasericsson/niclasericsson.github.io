@@ -51,24 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 23755,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resume/index.html",
-			"settings":
-			{
-				"buffer_size": 9177,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -127,18 +109,24 @@
 	"expanded_folders":
 	[
 		"/Users/dev/Projects/niclasericsson.github.io",
-		"/Users/dev/Projects/niclasericsson.github.io/resume"
+		"/Users/dev/Projects/niclasericsson.github.io/js",
+		"/Users/dev/Projects/niclasericsson.github.io/resume",
+		"/Users/dev/Projects/niclasericsson.github.io/src"
 	],
 	"file_history":
 	[
+		"/Users/dev/Projects/niclasericsson.github.io/.gitignore",
+		"/Users/dev/Projects/niclasericsson.github.io/style.css",
 		"/Users/dev/Projects/niclasericsson.github.io/resume/index.html",
+		"/Users/dev/Projects/niclasericsson.github.io/index.html",
+		"/Users/dev/Projects/niclasericsson.github.io/src/project.js",
+		"/Users/dev/Projects/niclasericsson.github.io/js/script.js",
+		"/Users/dev/Projects/niclasericsson.github.io/js/jquery-1.11.3.min.js",
+		"/Users/dev/Projects/niclasericsson.github.io/like_button.js",
+		"/Users/dev/Projects/niclasericsson.github.io/src/like_button.js",
 		"/Users/dev/Projects/niclasericsson.github.io/peppypals/index.html",
 		"/Users/dev/Projects/niclasericsson.github.io/studyalongapp/index.html",
-		"/Users/dev/Projects/niclasericsson.github.io/style.css",
-		"/Users/dev/Projects/niclasericsson.github.io/index.html",
-		"/Users/dev/Projects/niclasericsson.github.io/.gitignore",
 		"/Users/dev/Downloads/Instrumentimport Ekerö - Import.csv",
-		"/Users/dev/Projects/niclasericsson.github.io/js/script.js",
 		"/Users/dev/Downloads/Bokningsbekräftelse.html",
 		"/Users/dev/Projects/niclasericsson.github.io/portfolio.sublime-project",
 		"/Users/dev/Projects/mockserver/app.js",
@@ -254,11 +242,7 @@
 		"/Users/dev/Desktop/latest-live.sql",
 		"/Volumes/playalong/website/webroot/templates/playalong/html/mod_footer/default.php",
 		"/Volumes/playalong/website/webroot/templates/playalong/css/colorSchemes/studyalong.css",
-		"/Volumes/playalong/website/webroot/templates/playalong/css/colorSchemes/studyalong kopia.css",
-		"/Volumes/playalong/website/webroot/templates/playalong/colorScheme.php",
-		"/Users/dev/Desktop/newStyle.sql",
-		"/Users/dev/Downloads/bootstrap/css/bootstrap.min.css",
-		"/Users/dev/Downloads/bootstrap/css/bootstrap-theme.css"
+		"/Volumes/playalong/website/webroot/templates/playalong/css/colorSchemes/studyalong kopia.css"
 	],
 	"find":
 	{
@@ -316,67 +300,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1509,
-								1509
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 224.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resume/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9177,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2562,
-								2562
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 665.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -386,7 +311,7 @@
 	},
 	"input":
 	{
-		"height": 35.0
+		"height": 38.0
 	},
 	"layout":
 	{
