@@ -53,11 +53,6 @@
 }
 
 .description{
-	/*margin-top: 90px;
-	margin-left: 590px;
-	position: absolute;
-	width: 500px;
-	line-height: 30px;*/
 	font-size: 20px;
 }
 
@@ -115,6 +110,10 @@
 .description > span > a.disabled {
 	opacity: 0.6;
 	pointer-events: none;
+}
+
+.description ul {
+	margin: 0;
 }
 
 @media only screen and (min-device-width: 1024px) {
