@@ -51,6 +51,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "resume/index.html",
+			"settings":
+			{
+				"buffer_size": 9477,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -300,8 +309,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resume/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8065,
+								8065
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3286.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
