@@ -34,7 +34,6 @@ svg{
 	margin: auto;
 }
 circle:hover{
-	fill: #E8CCBA;
 	cursor:pointer;
 	-o-transition:.5s;
 	-ms-transition:.5s;
@@ -83,11 +82,11 @@ d3.tsv("data/data.tsv", function(data) {
     data.forEach(function(d) {
 
 		var shape = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+		var randomSkinColor = skinColors[Math.floor(Math.random()*skinColors.length)];
 		shape.setAttribute("cx", x);
 		shape.setAttribute("cy", y);
 		shape.setAttribute("r",  (+data[n].veryGoodHealth+28));
-		var color = skinColors[Math.floor(Math.random()*skinColors.length)];
-		shape.setAttribute("fill", color);
+		shape.setAttribute("fill", randomSkinColor);
 		shape.setAttribute("onmouseover", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+30) + "')");
 		shape.setAttribute("onclick", "alert('Statistics for " + data[n].country + " (" + data[n].totalVotes + " votes in total)\\n\\nVery happy: " + data[n].veryHappy + "%\\nRather happy: " + data[n].ratherHappy + "%\\nNot very happy: " + data[n].notVeryHappy + "%\\nNot at all happy: " + data[n].notAtAllHappy + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHappy + +data[n].dontKnowHappy) + "%\\n\\nVery good health: " + data[n].veryGoodHealth + "%\\nGood health: " + data[n].goodHealth + "%\\nFair health: " + data[n].fairHealth + "%\\nPoor health: " + data[n].poorHealth + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHealth + +data[n].dontKnowHealth) + "%')");
 		shape.setAttribute("onmouseout", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+28) + "')");
