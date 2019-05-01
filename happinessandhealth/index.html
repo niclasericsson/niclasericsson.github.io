@@ -74,6 +74,8 @@ svg.setAttribute('height', '1200');
 svg.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
 document.body.appendChild(svg);
 
+var skinColors = ['#ffdbac', '#f1c27d', '#e0ac69', '#c68642', '#8d5524'];
+
 d3.tsv("data/data.tsv", function(data) { 
 	var x = 90;
 	var y = 75;
@@ -84,7 +86,8 @@ d3.tsv("data/data.tsv", function(data) {
 		shape.setAttribute("cx", x);
 		shape.setAttribute("cy", y);
 		shape.setAttribute("r",  (+data[n].veryGoodHealth+28));
-		shape.setAttribute("fill", "#f7ddcb");
+		var color = skinColors[Math.floor(Math.random()*skinColors.length)];
+		shape.setAttribute("fill", color);
 		shape.setAttribute("onmouseover", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+30) + "')");
 		shape.setAttribute("onclick", "alert('Statistics for " + data[n].country + " (" + data[n].totalVotes + " votes in total)\\n\\nVery happy: " + data[n].veryHappy + "%\\nRather happy: " + data[n].ratherHappy + "%\\nNot very happy: " + data[n].notVeryHappy + "%\\nNot at all happy: " + data[n].notAtAllHappy + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHappy + +data[n].dontKnowHappy) + "%\\n\\nVery good health: " + data[n].veryGoodHealth + "%\\nGood health: " + data[n].goodHealth + "%\\nFair health: " + data[n].fairHealth + "%\\nPoor health: " + data[n].poorHealth + "%\\nNo answer or don´t know: " + (+data[n].noAnswerHealth + +data[n].dontKnowHealth) + "%')");
 		shape.setAttribute("onmouseout", "evt.target.setAttribute('r', '" + (+data[n].veryGoodHealth+28) + "')");
