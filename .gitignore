@@ -1,3 +1,4 @@
 node_modules/
 portfolio.sublime-workspace
 *.sublime-workspace
+.DS_Store
