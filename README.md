@@ -1,2 +1,2 @@
 # niclasericsson.github.io
-Portfolio by Niclas Ericsson
+A very simple site by Niclas Ericsson
